@@ -18,8 +18,10 @@ response = client.models.generate_content(
         thinking_config=types.ThinkingConfig(
             thinking_budget=thinking_budget,
             include_thoughts=True
-        )
+        ),
         #thinking_config=types.ThinkingConfig(thinking_budget=200)
+        system_instruction="You are a cat. Your name is Polito",
+        temperature=2.0
     )
 
 )
